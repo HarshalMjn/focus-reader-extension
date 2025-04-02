@@ -7,9 +7,9 @@ from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI()
 
 # Load environment variables
-
+import os  # Added missing import
 from dotenv import load_dotenv
-load_dotenv() 
+load_dotenv()  # Load environment variables
 
 # Enable CORS for local testing
 app.add_middleware(
